@@ -1,1 +1,33 @@
+void Library::add_employee(employee employee)
+{
+
+	for (int i = 0; i < PQ.size(); i++)
+	{
+		if ((PQ.at(i).get_priority() >= employee.get_priority()) && ((i + 1) == PQ.size()))
+		{
+			//Add element to the back of the list.
+		}
+		if ((PQ.at(i).get_priority() <= employee.get_priority()) && (i == 0))
+		{
+			//add element to the front of the list.
+		}
+		if ((PQ.at(i).get_priority() <= employee.get_priority()) && (PQ.at(i + 1).get_priority() >= employee.get_priority()))
+		{
+			//Looking for a way to insert items into a vector or list.
+		}
+
+
+	
+	}
+}
+
+void Library::circulate_book(book book, date start_date)
+{
+	book.update_current(start_date);
+	book_in_circ.push_back(book);
+	PQ.at(0).set_wait(book.get_start_date().get_difference(book.get_current_date()));
+	PQ.at(0).set_start(start_date);
+	has_books.push_back(PQ.at(0));
+	PQ.erase(PQ.begin());//This may erase the entire vector POSSIBLE ERROR
+}
 
