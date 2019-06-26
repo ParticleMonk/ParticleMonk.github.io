@@ -43,6 +43,8 @@ public:
 	book();
 	void use();//increments times_used
 	void update_current(date newdate);//updates current date
+	date get_current_date();//Returns the current date
+	date get_start_date(); //Returns the start date
 
 private:
 	string name;
