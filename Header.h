@@ -17,10 +17,11 @@ public:
 	void set_wait(int newwait);
 	void set_priority(int newpriority);
 	void set_start(date startDate);
+	void set_book(string newBook);
 	int get_priority();
 	int get_retainer();
 	int get_wait();
-	int get_start_date();
+	date get_start_date();
 	string get_book();
 
 
@@ -44,7 +45,7 @@ private:
 };
 class book {
 public:
-	book();
+	book(string name, date start_date);
 	void use();//increments times_used
 	void update_current(date newdate);//updates current date
 	date get_current_date();//Returns the current date
@@ -68,7 +69,7 @@ private:
 
 public:
 	void add_employee(employee employee);//Adds a new employee to PQ in the right priority location
-	void circulate_book(book book, date start_date);//adds a new book to the list book_in_circ and gives it to the top employee in PQ and removes that employee to has_books - sets start for employee - sets wait for employee
+	void circulate_book(string bookIncoming, date start_date);//adds a new book to the list book_in_circ and gives it to the top employee in PQ and removes that employee to has_books - sets start for employee - sets wait for employee
 	void pass_on(string bookPass, string newEmployee, date current_date);//updates retainer(employee.start-book.current_date) for current holding employee - sets prioirty for ncurrent holding employee - update book with current date - removes next employee from PQ, adds this employee to has_book and sets that emlpoyees wait(current_date- book.start_date) - returns the previous holding employee to PQ - increment use on book
 	void archive_book(book book)// checks to see if book needs to be archives and if so move the book from list book_in_circ and put it in list archives
 
