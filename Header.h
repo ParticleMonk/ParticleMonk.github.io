@@ -20,12 +20,14 @@ public:
 	int get_priority();
 	int get_retainer();
 	int get_wait();
+	string get_book();
 
 
 private:
 	string name;
 	date start;
 	int wait_time, ratain_time, priority;
+	string book;
 };
 
 class date {
