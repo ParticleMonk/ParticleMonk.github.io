@@ -16,7 +16,7 @@ public:
 	void set_retainer(int retainer);
 	void set_wait(int newwait);
 	void set_priority(int newpriority);
-	int get_prioirty();
+	int get_priority();
 	int get_retainer();
 	int get_wait();
 
