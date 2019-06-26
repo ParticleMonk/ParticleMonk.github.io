@@ -1,19 +1,21 @@
+
 void Library::add_employee(employee employee)
 {
 
 	for (int i = 0; i < PQ.size(); i++)
 	{
-		if ((PQ.at(i).get_priority() >= employee.get_priority()) && ((i + 1) == PQ.size()))
+		
+		if ((PQ.at(i).get_priority() >= employee.get_priority()) && ((i + 1) == PQ.size())) //For the case in which employee is the lowest priority
 		{
-			//Add element to the back of the list.
+			PQ.push_back(employee);//Add element to the back of the list.
 		}
-		if ((PQ.at(i).get_priority() <= employee.get_priority()) && (i == 0))
+		if ((PQ.at(i).get_priority() <= employee.get_priority()) && (i == 0))//For the case in which employee is the highest priority
 		{
-			//add element to the front of the list.
+			PQ.insert(PQ.begin(), employee);//add element to the front of the list.
 		}
-		if ((PQ.at(i).get_priority() <= employee.get_priority()) && (PQ.at(i + 1).get_priority() >= employee.get_priority()))
+		if ((PQ.at(i).get_priority() <= employee.get_priority()) && (PQ.at(i + 1).get_priority() >= employee.get_priority()))//For the case in which employee is in the middle somewhere.
 		{
-			//Looking for a way to insert items into a vector or list.
+			PQ.insert(PQ.begin() + i - 1, employee);//Looking for a way to insert items into a vector or list.
 		}
 
 
@@ -21,13 +23,42 @@ void Library::add_employee(employee employee)
 	}
 }
 
-void Library::circulate_book(book book, date start_date)
+void Library::circulate_book(string bookIncoming, date start_date)
 {
-	book.update_current(start_date);
-	book_in_circ.push_back(book);
-	PQ.at(0).set_wait(book.get_start_date().get_difference(book.get_current_date()));
+	book newBook(bookIncoming, start_date);
+	newBook.update_current(start_date);
+	book_in_circ.push_back(newBook);
+	PQ.at(0).set_wait(newBook.get_start_date().get_difference(newBook.get_current_date()));
 	PQ.at(0).set_start(start_date);
+	PQ.at(0).set_book(bookIncoming);
 	has_books.push_back(PQ.at(0));
 	PQ.erase(PQ.begin());//This may erase the entire vector POSSIBLE ERROR
 }
 
+void Library::pass_on(string bookPass, string newEmployee, date current_date)
+{
+	for (employee employee : has_books)
+	{
+		if (employee.get_book() == bookPass)
+		{
+			for (book book : book_in_circ)
+			{
+				if (book.get_name() == bookPass)
+				{
+					employee.set_retainer(employee.get_start_date().get_difference(book.get_current_date()));
+					employee.set_priority(employee.get_wait() - employee.get_retainer());
+					book.update_current(current_date);
+					book.use();
+					this->add_employee(employee);
+					this->remove_employee(employee);
+					PQ.at(0).set_wait(book.get_start_date().get_difference(book.get_current_date));
+					PQ.at(0).set_book(bookPass);
+					has_books.push_back(PQ.at(0));
+					PQ.erase(PQ.begin());
+				}
+			}
+			
+		}
+	}
+	
+}
