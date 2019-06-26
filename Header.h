@@ -33,7 +33,7 @@ public:
 	string compare(string date);//comparing two different date instances and returns "greater", "less" or "equal" MAKE SURE TO COMPARE LARGER OF SECTION OF TIME FIRST
 	void set_date();//will take a date "02/28/2019" and fill in the appropriate attributes 
 	string get_date();//return date in a string formate "XX/XX/XXXX"
-	int get_difference();//Returns the difference between passed date and selfdate
+	int get_difference(date incomingDate);//Returns the difference between passed date and selfdate
 
 private:
 	int year, month, day;
