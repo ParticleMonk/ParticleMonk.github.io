@@ -45,12 +45,13 @@ private:
 };
 class book {
 public:
-	book(string name, date start_date);
+book(string name, date start_date);
 	void use();//increments times_used
 	void update_current(date newdate);//updates current date
 	date get_current_date();//Returns the current date
 	date get_start_date(); //Returns the start date
-
+	string get_name();
+	int get_usage();//returns usage
 private:
 	string name;
 	date start_date, current_date;
