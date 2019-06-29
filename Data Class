@@ -6,6 +6,12 @@
 #include <sstream>
 #include "Header.h"
 
+date::date() {
+	year = 0000;
+	month = 00;
+	day = 00;
+}
+
 string date::get_date() {
 	string date;
 
