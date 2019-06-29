@@ -25,6 +25,7 @@ public:
 	date get_start_date();
 	string get_book();
 	string get_name();
+	bool has_read(string bookTitle); //Should search read vector and return true if book name is in it. 
 
 
 
@@ -34,6 +35,7 @@ private:
 	date start;
 	int wait_time, ratain_time, priority;
 	string book;
+	vector<string> read;
 };
 
 class date {
