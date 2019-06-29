@@ -12,13 +12,16 @@ date::date() {
 	day = 00;
 }
 
-string date::get_date() {
-	string date;
+date date::get_date() {
+	date temp_date;
 
-	date = day + '/' + month + '/' + year;
+	temp_date.year = 0000;
+	temp_date.month = 00;
+	temp_date.day = 00;
 
-	return date;
+	return temp_date;
 }
+
 
 void date::set_date(string date) {
 	string substr;
