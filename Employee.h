@@ -28,6 +28,8 @@ public:
 	date get_start_date() { return start; };
 	string get_book() { return book; };
 	string get_name() { return name; };
+	bool has_read(string bookTitle); //Should search read vector and return true if book name is in it.
+	void add_book_to_history(string bookTitle);
 
 
 
@@ -37,4 +39,5 @@ private:
 	date start;
 	int wait_time, retain_time, priority;
 	string book;
+	vector<string> read;
 };
