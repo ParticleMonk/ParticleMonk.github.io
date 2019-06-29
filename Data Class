@@ -12,6 +12,14 @@ date::date() {
 	day = 00;
 }
 
+string date::get_S_date() {
+	string s_date;
+
+	s_date = year + '/' + month + '/' + day;
+
+	return s_date;
+}
+
 date date::get_date() {
 	date temp_date;
 
