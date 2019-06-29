@@ -1,1 +1,35 @@
+book::book(string name, date start_date)
+{
+name = "";
+start_date = 01 / 01 / 2019;
+}
 
+void book::use()
+{
+times_used += 1;
+}
+
+void book::update_current(date newdate)
+{
+current_date = newdate;
+}
+
+date book::get_current_date()
+{
+return current_date();
+}
+
+date book::get_start_date()
+{
+return start_date();
+}
+
+string book::get_name()
+{
+return name;
+}
+
+int book::get_usage()
+{
+return times_used;
+}
