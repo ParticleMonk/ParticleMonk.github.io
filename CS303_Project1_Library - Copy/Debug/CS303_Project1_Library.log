@@ -1,0 +1,15 @@
+﻿  Book.cpp
+  Library.cpp
+C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Library.cpp(22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Library.cpp(24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Library.cpp(40): warning C4018: '<': signed/unsigned mismatch
+C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Library.cpp(43): warning C4018: '<': signed/unsigned mismatch
+C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Library.cpp(54): warning C4018: '<': signed/unsigned mismatch
+C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Library.cpp(61): warning C4018: '<': signed/unsigned mismatch
+C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Library.cpp(72): warning C4018: '<': signed/unsigned mismatch
+C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Library.cpp(79): warning C4018: '<': signed/unsigned mismatch
+C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Library.cpp(92): warning C4018: '<': signed/unsigned mismatch
+C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Library.cpp(96): warning C4018: '<': signed/unsigned mismatch
+  Main.cpp
+  Generating Code...
+  CS303_Project1_Library.vcxproj -> C:\Users\matth\OneDrive\Desktop\CS303_Project1_Library - Copy\Debug\CS303_Project1_Library.exe
