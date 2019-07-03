@@ -1,0 +1,16 @@
+﻿  Book.cpp
+  Employee.cpp
+  Library.cpp
+C:\Users\dekhf\source\repos\CS303 Complete\CS303 Complete\Library.cpp(28,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\dekhf\source\repos\CS303 Complete\CS303 Complete\Library.cpp(30,31): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\dekhf\source\repos\CS303 Complete\CS303 Complete\Library.cpp(46,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\dekhf\source\repos\CS303 Complete\CS303 Complete\Library.cpp(49,22): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\dekhf\source\repos\CS303 Complete\CS303 Complete\Library.cpp(60,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\dekhf\source\repos\CS303 Complete\CS303 Complete\Library.cpp(67,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\dekhf\source\repos\CS303 Complete\CS303 Complete\Library.cpp(78,22): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\dekhf\source\repos\CS303 Complete\CS303 Complete\Library.cpp(85,24): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\dekhf\source\repos\CS303 Complete\CS303 Complete\Library.cpp(98,20): warning C4018:  '<': signed/unsigned mismatch
+  Main.cpp
+  Generating Code...
+C:\Users\dekhf\source\repos\CS303 Complete\CS303 Complete\Library.cpp(102,22): warning C4018:  '<': signed/unsigned mismatch
+  CS303 Complete.vcxproj -> C:\Users\dekhf\source\repos\CS303 Complete\Debug\CS303 Complete.exe
