@@ -1,0 +1,9 @@
+﻿  Main.cpp
+C:\Users\matth\OneDrive\Desktop\CS303_Project_2B_Morse_Code\Decoder.h(66): warning C4018: '<': signed/unsigned mismatch
+C:\Users\matth\OneDrive\Desktop\CS303_Project_2B_Morse_Code\Encoder.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\matth\OneDrive\Desktop\CS303_Project_2B_Morse_Code\Encoder.h(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\matth\OneDrive\Desktop\CS303_Project_2B_Morse_Code\Encoder.h(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\matth\OneDrive\Desktop\CS303_Project_2B_Morse_Code\Encoder.h(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\matth\OneDrive\Desktop\CS303_Project_2B_Morse_Code\Encoder.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\matth\OneDrive\Desktop\CS303_Project_2B_Morse_Code\Encoder.h(41): warning C4018: '<': signed/unsigned mismatch
+  CS303_Project_2B_Morse_Code.vcxproj -> C:\Users\matth\OneDrive\Desktop\CS303_Project_2B_Morse_Code\Debug\CS303_Project_2B_Morse_Code.exe
